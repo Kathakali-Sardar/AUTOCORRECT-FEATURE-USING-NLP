@@ -1,0 +1,26 @@
+#Project Process
+
+-A large English corpus is used as the reference vocabulary.
+
+-Text was cleaned by removing punctuation, converting to lowercase, and tokenizing into individual words.
+
+-Word frequencies were computed to estimate the probability of each word, which aids in ranking candidate corrections.
+
+- 4 possible ways of how we can fix a typing error is implemented such as-
+
+1.Deletion of letter
+
+2.Switching Letter
+
+3.Replace Letter
+
+4.Insert new Letter
+
+-We applied lemmatization before checking the vocabulary to improve accuracy.
+
+-A unigram model was created using the word frequency dictionary.Each candidate correction’s probability was calculated as P(word) = Count(word) / Total Words.The word with the highest probability among generated candidates is chosen as the best correction.
+
+-The system accepts a misspelled word and returns the best correction.
+It handles:
+Known words (returns the word itself)
+Unknown words (generates possible candidates and selects the most probable one)
