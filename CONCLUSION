@@ -1,0 +1,15 @@
+#CONCLUSION-
+
+This project successfully implemented a rule-based and probabilistic auto-correction system using NLP techniques.The model is effective for single-word corrections.
+
+Learns from input data → calculates word probabilities.
+
+Uses NLP-based word similarity → finds the closest words.
+
+Provides the best suggestions → ranks words by frequency.
+
+Handles common spelling mistakes → via deletion, insertion, replacement, and switching.
+
+For further steps, we can work on the High level auto-corrector system which uses the large amount of dataset and works more efficiently. 
+
+
